@@ -36,6 +36,16 @@ class Parabola{
         double[] v2=p2.varf();
         return hypot(v1[0]-v2[0],v1[1]-v2[1]);
     }
+    public double[] mijloc(Parabola p1){
+        double[] mijloc={(p1.varf()[0] + this.varf()[0]) /2 , (p1.varf()[1] + this.varf()[1]) /2};
+        return mijloc;
+    }
+
+    public double lungime(Parabola p1){
+        double[] v1=p1.varf();
+        double[] v2=this.varf();
+        return hypot(v1[0]-v2[0],v1[1]-v2[1]);
+    }
 }
 public class MainApp {
     public static void main(String[] args) {
